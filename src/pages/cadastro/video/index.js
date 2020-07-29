@@ -1,7 +1,7 @@
 import React from 'react';
 import PageDefault from '../../../components/PageDefault';
 import { Link } from 'react-router-dom';
-import { FiArrowLeft, FiLogIn } from 'react-icons/fi';
+// import { FiArrowLeft, FiLogIn } from "react-icons/fi";
 import '../cadastro.css';
 
 
@@ -10,7 +10,7 @@ function CadastroVideo() {
     return (
      <PageDefault>
          <Link className="back-link" to="/">
-                <FiArrowLeft size={16} color="#84c2f5" /> 
+                {/* <FiArrowLeft size={16} color="#84c2f5" />  */}
                 Voltar
                 </Link>
 
@@ -18,7 +18,7 @@ function CadastroVideo() {
 
 
         <Link  className="back-link" to="/cadastro/categoria"> 
-            <FiLogIn size={16} color="#84c2f5" />
+            {/* <FiLogIn size={16} color="#84c2f5" /> */}
                       
             Cadastrar Categoria
         </Link>

@@ -2,7 +2,7 @@ import React from 'react';
 import PageDefault from '../../../components/PageDefault';
 import { Link } from 'react-router-dom'
 import '../cadastro.css';
-import { FiArrowLeft } from 'react-icons/fi';
+// import { FiArrowLeft } from 'react-icons/fi';
 
 function CadastroCategoria() {
     return (
@@ -11,7 +11,7 @@ function CadastroCategoria() {
             <h1> Cadastro de Gategoria </h1>
             
                 <Link className="back-link" to="/">
-                <FiArrowLeft size={16} color="#84c2f5" /> 
+                {/* <FiArrowLeft size={16} color="#84c2f5" />  */}
                 Home
                 </Link>
                 <div className="cadastro-container">

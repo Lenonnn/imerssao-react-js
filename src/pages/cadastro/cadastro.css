@@ -1,0 +1,63 @@
+input, buttons, textarea {
+    font: 400 16px Roboto, sans-serif;
+}
+form button {
+    cursor: pointer;
+    width: 60%;
+    height: 45px;
+    background: #84c2f5;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    line-height:  60px;
+    transition: filter 0.4s;
+}
+form button:hover {
+    filter: brightness(50%);
+}
+
+form input {
+    margin-top: 20px;
+    width: 60%;
+    height: 45px;
+    color: #333333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+
+form textarea {
+    margin-top: 20px;
+    width: 60%;
+    resize: vertical;
+    min-height: 140px;
+    color: #333333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 16px 24px;
+    line-height: 24px;
+    
+  
+}
+.back-Link {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    color: #75b2e4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.5s;
+}
+.back-link svg {
+    margin-right: 9px;
+}
+
+.back-link:hover {
+    opacity: 0.8;
+}

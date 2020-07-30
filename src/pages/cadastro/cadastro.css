@@ -1,9 +1,9 @@
 input, buttons, textarea {
-    font: 400 16px Roboto, sans-serif;
+    font: 400 18px Roboto, sans-serif;
 }
-form button {
+button {
     cursor: pointer;
-    width: 60%;
+    width: 80%;
     height: 45px;
     background: #84c2f5;
     border: 0;
@@ -17,34 +17,49 @@ form button {
     font-size: 16px;
     line-height:  60px;
     transition: filter 0.4s;
+    margin-left: 180px;
 }
-form button:hover {
+button:hover {
     filter: brightness(50%);
 }
 
-form input {
+form label{
+    font: 400 18px Roboto, sans-serif;
     margin-top: 20px;
-    width: 60%;
+    text-align: left;
+}
+
+form input {
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 80%;
     height: 45px;
-    color: #333333;
+    color: #1607a1;
     border: 1px solid #dcdce6;
     border-radius: 8px;
     padding: 0 24px;
+    align-items: flex-end;
 }
+
 
 form textarea {
     margin-top: 20px;
-    width: 60%;
+    margin-left: 98px;
+    width: 80%;
     resize: vertical;
     min-height: 140px;
-    color: #333333;
+    color: #1607a1;
     border: 1px solid #dcdce6;
     border-radius: 8px;
     padding: 16px 24px;
-    line-height: 24px;
-    
+    line-height: 24px; 
   
 }
+
+form color {
+    margin-left: 98px;
+}
+
 .back-Link {
     display: flex;
     align-items: center;

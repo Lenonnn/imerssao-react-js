@@ -1,7 +1,8 @@
+/*
 input, buttons, textarea {
     font: 400 18px Roboto, sans-serif;
 }
-button {
+ button {
     cursor: pointer;
     width: 80%;
     height: 45px;
@@ -18,7 +19,7 @@ button {
     line-height:  60px;
     transition: filter 0.4s;
     margin-left: 180px;
-}
+} 
 button:hover {
     filter: brightness(50%);
 }
@@ -76,3 +77,5 @@ form color {
 .back-link:hover {
     opacity: 0.8;
 }
+
+*/

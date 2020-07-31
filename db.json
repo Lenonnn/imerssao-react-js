@@ -1,0 +1,22 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Front-end",
+            "descricao": "Uma categoria",
+            "cor": "#6bd1ff"
+        },
+        {
+            "id": 2,
+            "nome": "FullStack",
+            "descricao": "Uma categoria",
+            "cor": "#6bd1ff"
+        },
+        {
+            "id": 3,
+            "nome": "Abap",
+            "descricao": "Uma categoria",
+            "cor": "#6bd1ff"
+        }
+    ]
+}

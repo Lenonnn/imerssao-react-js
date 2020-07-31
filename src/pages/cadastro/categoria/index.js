@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PageDefault from '../../../components/PageDefault';
 import { Link } from 'react-router-dom'
-import '../cadastro.css';
 import FormField from '../../../components/FormField';
+import Button from '../../../components/Button';
 // import { FiArrowLeft } from 'react-icons/fi';
+// import '../cadastro.css';
 
 
 
@@ -34,9 +35,9 @@ function CadastroCategoria() {
         // setValues(e.target.value);
 
         setValue(
-            e.target.getAttribute('name'), 
+            e.target.getAttribute('name'),
             e.target.value
-            );
+        );
         // const { getAttribute, value } = e.target;
         // setValue(
         //     getAttribute('name'),
@@ -44,15 +45,50 @@ function CadastroCategoria() {
         // );
     }
 
+    useEffect(() => {
+        console.log('Alo, teste, BRASIL');
+
+        const URL_TOP = 'https://imerssao-react-js-lenon.herokuapp.com/';
+        fetch(URL_TOP)
+            .then(async (respostaDoServidor) => {
+                const resposta = await respostaDoServidor.json();
+                setCategorias([
+                    ...resposta,
+                ]);
+            });
+
+        // setTimeout(() => {
+        //     setCategorias([
+        //         ...categorias,
+        //         {
+        //             "id": 1,
+        //             "nome": "Front-end",
+        //             "descricao": "Uma categoria",
+        //             "cor": "#6bd1ff"
+        //         },
+        //         {
+        //             "id": 2,
+        //             "nome": "FullStack",
+        //             "descricao": "Uma categoria",
+        //             "cor": "#6bd1ff"
+        //         },
+        //         {
+        //             "id": 3,
+        //             "nome": "Abap",
+        //             "descricao": "Uma categoria",
+        //             "cor": "#6bd1ff"
+        //         }
+
+        //     ])
+        // }, 4 * 1000);
+
+    }, []);
+
     return (
         <PageDefault>
 
             <h1> Cadastro de Categoria : {values.nome}</h1>
 
-            <Link className="back-link" to="/">
-                {/* <FiArrowLeft size={16} color="#84c2f5" />  */}
-                Home
-                </Link>
 
             <form onSubmit={function handleSubmit(e) {
                 e.preventDefault();
@@ -62,6 +98,7 @@ function CadastroCategoria() {
                     ...categorias,
                     values
                 ]);
+
                 setValues(valoresIniciais);
             }}>
 
@@ -75,12 +112,12 @@ function CadastroCategoria() {
 
                 <FormField
                     label="Descrição"
-                    type="textArea"
+                    type="textarea"
                     name="descricao"
                     value={values.descricao}
                     onChange={handleChange}
                 />
-                
+
                 <FormField
                     label="Cor"
                     type="color"
@@ -89,36 +126,36 @@ function CadastroCategoria() {
                     onChange={handleChange}
                 />
 
-                {/* <div>
-                    <label>
-                        Descrição
-                        <textarea 
-                            type="text"
-                            value={values.descricao}
-                            name="descricao"
-                            onChange={handleChange} 
-                            />
-                    </label>
-                </div> */}
-
-                <div>
-                    <button>
-                        Cadastrar
-                    </button>
-                </div>
+                <Button>
+                    Cadastrar
+                    </Button>
 
             </form>
 
+            {categorias.length === 0 && (
+
+                <div>
+                    {/* Carregando... */}
+                Loading...
+                </div>
+
+            )}
+
+
             <ul>
-                {categorias.map((categoria, indice) => {
+                {categorias.map((categoria) => {
                     return (
-                        <li key={`${categoria}${indice}`}>
+                        <li key={`${categoria.nome}`}>
                             {categoria.nome}
                         </li>
                     )
                 })}
             </ul>
 
+            <Link className="back-link" to="/">
+                {/* <FiArrowLeft size={16} color="#84c2f5" />  */}
+                Home
+                </Link>
         </PageDefault>
     )
 }

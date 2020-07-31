@@ -20,11 +20,24 @@
 
 - Link GitHub Aula 1 : [Códigos Extras](https://gist.github.com/omariosouto/19dafd5ca155c46b3dcb31df89cfba55).
 - Link GitHub Aula 2 : [Códigos Extras](https://gist.github.com/omariosouto/5a3cb806f5be71cfc52909bca0eaa634).
+- Link GitHub Aula 3 : [Códgios extras](https://gist.github.com/omariosouto/e04dd020257ff18fdff307ae2b26e00f).
+- Link GitHub Aula 4 : [Códgios extras](https://gist.github.com/omariosouto/643616a1f923b3350675b643cccb462a).
 
 - Fontes 1 : [Google fontes](https://fonts.google.com/).
 - Fontes 2 : [Fontememe](https://fontmeme.com/netflix-font/).
 
 - Lib 1 : [Styled-components](https://styled-components.com/).
+
+
+### JavaScript Style Guide - ESLint  :chart_with_upwards_trend: :triangular_ruler:
+
+* JavaScript Style Guide - [AirBnb](https://github.com/airbnb/javascript).
+* JavaScript Style Guide - [Google](https://github.com/google/eslint-config-google).
+* JavaScript Style Guide - [Standard](https://github.com/standard/standard).
+
+Documentação [ESLint](https://eslint.org/).
+
+
 
 
 ### Materiais Extras - Videos
@@ -35,11 +48,14 @@
 - [Video 4 - Criando um Flappy Bird do ZERO!!!](https://www.youtube.com/watch?v=jOAU81jdi-c&list=PLTcmLKdIkOWmeNferJ292VYKBXydGeDej)
 
 
+- [Conteúdo sobre](https://programmingwithmosh.com/javascript/react-lifecycle-methods/) o ciclo de vida dos compontentes do React.js :alarm_clock:
 
 
 
 
-### Comandos para instalar dependências do projeto
+
+### Comandos para instalar dependências do projeto :speaker:
+
 
 OBS: " Se você baixar este pacote, poderá obter todas as dependências rodando o comando ``` npm i ``` ".
 
@@ -48,11 +64,23 @@ OBS: " Se você baixar este pacote, poderá obter todas as dependências rodando
 
 ``` npm install react-router-dom react-slick ```
 
+``` npx eslint --init ```
+
+``` npm install prop-types ```
+
+O [JSON Server](https://github.com/typicode/json-server) auxilia an criação de um servidor.
+
+``` npm install json-server ```
+
+O [Concurrently](https://www.npmjs.com/package/concurrently) permite rodar dois comandos que travam o terminal> Esses comanados passama rodar de forma silmutânea.
+
+``` npm i --save-dev concurrently ```
 
 
 
 
 ### Correções 1 :point_down:
+
 
 **Erro na hora de rodar a aplicação, para isso, é necessário rodar os comandos abaixo:**
 

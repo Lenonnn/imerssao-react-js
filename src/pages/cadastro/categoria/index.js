@@ -48,7 +48,7 @@ function CadastroCategoria() {
     useEffect(() => {
         console.log('Alo, teste, BRASIL');
 
-        const URL_TOP = 'https://imerssao-react-js-lenon.herokuapp.com/';
+        const URL_TOP = 'https://imerssao-react-js-lenon.herokuapp.com/categorias';
         fetch(URL_TOP)
             .then(async (respostaDoServidor) => {
                 const resposta = await respostaDoServidor.json();

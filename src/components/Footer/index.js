@@ -9,11 +9,13 @@ function Footer() {
       </a>
       <p>
         Orgulhosamente criado por {'    '}
-        <a href="linkedin.com/in/lenon-soares-389394150/">
+        <a href="https://linkedin.com/in/lenon-soares-389394150/">
+        {/* <a href="https://linkedin.com/in/lenon-soares-389394150/" target="_blank"> */}
           Lenon Dev 
         </a> {'    '}
         durante a
         {'  '}
+        {/* <a href="https://www.alura.com.br/" target="_blank"> */}
         <a href="https://www.alura.com.br/">
           Imersão React da Alura
         </a>

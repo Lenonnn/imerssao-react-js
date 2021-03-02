@@ -1,6 +1,6 @@
 # Projeto sistema de videos similar ao NetFlix :tv:
 
-**Visite o site da aplicação em [LenonFLIX](https://imerssao-react-lenon-dev.vercel.app/).**
+**Visite o site da aplicação em [LenonFLIX](https://imerssao-react-js-lenon-dev.vercel.app/).**
 
 
 ## Curso semana de Imerssao React :mega::mega:
